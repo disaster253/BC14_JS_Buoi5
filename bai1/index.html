@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        display: block;
+        margin: 20px 0;
+      }
+      button {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Vui lòng điền khu vực thi</h3>
+    <p>Khu vực: A, B, C</p>
+    <p style="color: red">Nhập X nếu bạn không thuộc những khu vực trên</p>
+    <input type="text" id="area" />
+    <h3>Vui lòng điền đối tượng thi</h3>
+    <p>Đối tượng: 1, 2, 3</p>
+    <p style="color: red">Nhập 0 nếu bạn không thuộc những khu vực trên</p>
+    <input type="text" id="object" />
+    <h3>Nhập điểm chuẩn</h3>
+    <input type="text" id="pointCheck" />
+    <h2>Nhập điểm môn</h2>
+    <label for="point1">Môn thứ 1</label>
+    <input type="text" name="userPoint" id="point1" />
+    <label for="point2">Môn thứ 2</label>
+    <input type="text" name="userPoint" id="point2" />
+    <label for="point3">Môn thứ 3</label>
+    <input type="text" name="userPoint" id="point3" />
+    <button onclick="calPoint()">Tính điểm</button>
+    <div id="result"></div>
+    <div id="resultPoint"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
