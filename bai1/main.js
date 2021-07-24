@@ -19,8 +19,9 @@ function calPoint() {
 	function checkPoint() {
 		if (totalPoint >= pCheck) {
 			resultPoint.innerHTML = "Bạn đã đậu";
-		} else if (p1 == 0 || p2 == 0 || p3 == 0) {
-			resultPoint.innerHTML = "Bạn đã rớt vì có môn 0đ";
+			if (p1 == 0 || p2 == 0 || p3 == 0) {
+				resultPoint.innerHTML = "Bạn đã rớt vì có môn 0đ";
+			}
 		} else {
 			resultPoint.innerHTML = "Bạn đã rớt";
 		}
